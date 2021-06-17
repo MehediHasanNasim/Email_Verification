@@ -1,0 +1,31 @@
+{% extends 'itsapp/base.html' %}
+{% load static %}
+
+{% block title %}
+    
+{% endblock title %}
+    
+
+{% block bodycontent %}
+ 
+<body>
+<!--  Request me for a signup form or any type of help  -->
+<div class="login-form">    
+    <form action="/examples/actions/confirmation.php" method="post">
+		<div class="avatar"><i class="material-icons">&#xE7FF;</i></div>
+    	<h4 class="modal-title">welcome {{ request.user.username }}</h4>
+                    
+    </form>			
+   
+</div>
+</body>
+</html>       
+  
+  
+  
+  
+  
+
+
+{% endblock bodycontent %}
+    

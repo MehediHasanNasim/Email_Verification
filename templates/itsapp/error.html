@@ -1,0 +1,32 @@
+{% extends 'itsapp/base.html' %}
+{% load static %}
+
+{% block title %}
+    
+{% endblock title %}
+    
+
+{% block bodycontent %}
+ 
+<body>
+<!--  Request me for a signup form or any type of help  -->
+<div class="login-form">    
+    <form action="/examples/actions/confirmation.php" method="post">
+		<div class="avatar"><i class="material-icons">&#xE7FF;</i></div>
+    	<h4 class="modal-title">Error!!!!</h4>
+        <a href="{% url 'home' %}">Home</a>
+                      
+    </form>			
+    <div class="text-center small">Don't have an account? <a href="{% url 'register_attempt' %}">Sign up</a></div>
+</div>
+</body>
+</html>       
+  
+  
+  
+  
+  
+
+
+{% endblock bodycontent %}
+    

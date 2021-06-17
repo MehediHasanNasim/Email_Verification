@@ -1,0 +1,18 @@
+{% extends 'itsapp/base.html' %}
+
+
+{% block bodycontent %}
+
+<div class="login-form">    
+    <form action="/examples/actions/confirmation.php" method="post">
+		<div class="avatar"><i class="material-icons">&#xE7FF;</i></div>
+    	<h4 class="modal-title">Congratulation! your mail is verified</h4>
+        <div class="card text-center">
+            Please login
+            <a class="btn btn-primary text-white" href="{% url 'login_attempt' %}">Login</a>
+        </div>
+</div>
+
+    
+{% endblock bodycontent %}
+    
